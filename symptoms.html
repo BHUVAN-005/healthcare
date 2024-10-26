@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Symptoms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Check Symptoms</h1>
+        </header>
+
+        <section class="content">
+            <div class="symptoms-card">
+                <h2>Headache</h2>
+                <p class="symptoms-description">Temples throbbing, couldn't work</p>
+                <div class="symptoms-details">
+                    <p><strong>Date:</strong> 20.04.2023</p>
+                    <p><strong>Time:</strong> 16:30 - 18:30</p>
+                    <label for="pain-level">Pain Level</label>
+                    <input type="range" id="pain-level" min="0" max="10" value="0">
+                </div>
+            </div>
+
+            <div class="diagnosis-card">
+                <h2>Diagnosis</h2>
+                <div class="diagnosis-content">
+                    <img src="aspirin.png" alt="Aspirin" class="diagnosis-img">
+                    <div class="diagnosis-info">
+                        <h3>Aspirin</h3>
+                        <p>ASS, 500mg</p>
+                        <p>2x Daily</p>
+                        <div class="reminders">
+                            <span>Reminders</span>
+                            <p>6:00, 22:00</p>
+                        </div>
+                    </div>
+                    <button class="edit-btn">✏️</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="navigation">
+            <a href="home.html"><button class="nav-btn">🏠</button></a>
+            <a href="search.html"><button class="nav-btn">🔍</button></a>
+            <a href="document.html"><button class="nav-btn">📁</button></a>
+            <a href="profile.html"><button class="nav-btn">👤</button></a>
+        </footer>
+    </div>
+</body>
+</html>
