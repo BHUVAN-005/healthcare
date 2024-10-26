@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard - Documents</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file for consistent styling -->
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>My Documents</h1>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Document</h2>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="document" required>
+                <button type="submit" class="upload-btn">Upload</button>
+            </form>
+        </section>
+
+        <!-- Document List Section -->
+        <section class="document-list">
+            <h2>My Health Records</h2>
+            <ul>
+                <li><a href="docs/report1.pdf" target="_blank">Blood Test Report - 2023</a></li>
+                <li><a href="docs/xray1.jpg" target="_blank">X-Ray - Chest</a></li>
+                <li><a href="docs/mri_report.pdf" target="_blank">MRI Scan Report</a></li>
+                <!-- Add more document links as needed -->
+            </ul>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html"><button class="nav-btn">🏠 Home</button></a>
+            <a href="document.html"><button class="nav-btn">📁 Doc</button></a>
+            <a href="profile.html"><button class="nav-btn">👤 Profile</button></a>
+        </nav>
+    </div>
+</body>
+</html>
